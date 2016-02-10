@@ -154,6 +154,10 @@ public class CompactVenue implements FoursquareEntity {
     return specials;
   }
 
+  public Boolean isClosed() {
+      return isClosed;
+  }
+
   /**
    * Returns information about who is here now
    * 
@@ -178,6 +182,7 @@ public class CompactVenue implements FoursquareEntity {
   protected Integer rating;
   protected SpecialGroup specials;
   protected HereNow hereNow;
+  protected Boolean isClosed = false;
   
   // TODO
   protected String page;
@@ -201,6 +206,7 @@ public class CompactVenue implements FoursquareEntity {
             ",\nspecials=" + specials +
             ",\nhereNow=" + hereNow +
             ",\npage='" + page + '\'' +
+            ",\nisClosed='" + isClosed + '\'' +
             '}';
   }
 }
