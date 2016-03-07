@@ -45,7 +45,7 @@ public class Venues {
     assertEquals("4a7a511970c603bbd64e8eb4", result.getResult().getTips().getGroups()[0].getItems()[0].getId());
     assertTrue(result.getResult().getCategories()[0].getPrimary());
     assertArrayEquals(new String[] {"bakery", "baking", "breakfast", "brunch", "fried chicken", "pancakes", "scones", "southern"}, result.getResult().getTags());
-    assertEquals(null, result.getResult().getSpecialsNearby());
+    assertArrayEquals(null, result.getResult().getSpecialsNearby());
     assertEquals("http://4sq.com/1UrXyu", result.getResult().getShortUrl());
     assertEquals("America/New_York", result.getResult().getTimeZone());
     assertEquals(null, result.getResult().getBeenHere());

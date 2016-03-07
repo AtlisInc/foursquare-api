@@ -128,6 +128,15 @@ public class CompleteVenue extends CompactVenue {
     }
 
     /**
+     * Returns the best photo for this venue.
+     *
+     * @return the best photo for this venue.
+     */
+    public Photo getBestPhoto() {
+        return bestPhoto;
+    }
+
+    /**
      * Returns the count of users who have liked this venue, and groups
      * containing any friends and others who have liked it.
      *
@@ -176,6 +185,7 @@ public class CompleteVenue extends CompactVenue {
     private String canonicalUrl;
     private CompleteSpecial[] specialsNearby;
     private Photos photos;
+    private Photo bestPhoto;
     private UserGroups likes;
     private Boolean like;
     private Boolean dislike;
@@ -207,7 +217,7 @@ public class CompleteVenue extends CompactVenue {
                 + ", menu=" + menu
                 + ",\nprice=" + price
                 + ",\nrating=" + rating
-                + ",\nspecials=" + specials
+                + ",\nspecials=" + Arrays.deepToString(specials)
                 + ",\nhereNow=" + hereNow
                 + ",\npage='" + page + '\''
                 + ",\ndescription='" + description + '\''
@@ -219,8 +229,9 @@ public class CompleteVenue extends CompactVenue {
                 + ",\nbeenHere=" + beenHere
                 + ",\nshortUrl='" + shortUrl + '\''
                 + ", canonicalUrl='" + canonicalUrl + '\''
-                + ", specialsNearby=" + specialsNearby
+                + ", specialsNearby=" + Arrays.deepToString(specialsNearby)
                 + ",\nphotos=" + photos
+                + ",\nbest photo=" + bestPhoto
                 + ",\nlikes=" + likes
                 + ",\nlike=" + like
                 + ", dislike=" + dislike
