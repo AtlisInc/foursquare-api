@@ -26,7 +26,6 @@
         <tag>foursquare-api-1.0.4</tag>
     </scm>
 
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
