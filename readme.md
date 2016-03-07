@@ -1,13 +1,26 @@
-foursquare-api-java
-=========
+# foursquare-api
 
-This is an updated version of the Google code project of the same name, available at [https://code.google.com/p/foursquare-api-java/](https://code.google.com/p/foursquare-api-java/)
+This fork of Foursquare API for Java is just to keep the library up to date and upload fresh releases to Maven central. 
 
-### Usage documentation
-* Dependencies: [Dependencies](https://github.com/clinejj/foursquare-api-java/wiki/Dependencies)
-* Basic usage example: [Basic Usage](https://github.com/clinejj/foursquare-api-java/wiki/Basic-Usage)
-* Authentication example: [Authentication Example](https://github.com/clinejj/foursquare-api-java/wiki/Authentication-Example)
-* Using maven: [Maven](https://github.com/clinejj/foursquare-api-java/wiki/Maven)
-* Changelog: [Changelog](https://github.com/clinejj/foursquare-api-java/wiki/Changelog)
-* Java Docs: Please download the javadoc jar file
+## Maven Dependency
+```
+<dependency>
+  <groupId>me.atlis</groupId>
+  <artifactId>foursquare-api</artifactId>
+  <version>RELEASE</version>
+</dependency>
+```
+
+## Usage
+* [Basic Usage](https://github.com/clinejj/foursquare-api-java/wiki/Basic-Usage)
+* [Authentication Example](https://github.com/clinejj/foursquare-api-java/wiki/Authentication-Example)
+
+## Dependencies
+
+* [JRegex](http://jregex.sourceforge.net/)
+
+## License
+
+LGPL. See LICENSE file for details.
+
 
