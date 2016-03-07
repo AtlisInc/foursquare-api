@@ -17,7 +17,7 @@ This fork of Foursquare API for Java is just to keep the library up to date and 
 
 ## Dependencies
 
-* [JRegex](http://jregex.sourceforge.net/)
+* [JSON](http://mvnrepository.com/artifact/org.json/json)
 
 ## License
 
