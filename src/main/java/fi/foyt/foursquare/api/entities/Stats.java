@@ -8,57 +8,56 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.entities;
 
 import fi.foyt.foursquare.api.FoursquareEntity;
 
 /**
  * Class representing Stats entity
- * 
+ *
  * @author Antti Leppä
  */
 public class Stats implements FoursquareEntity {
 
-  private static final long serialVersionUID = 1191621361079941540L;
+    private static final long serialVersionUID = 1191621361079941540L;
 
-  /**
-   * Returns checkins count
-   * 
-   * @return checkins count
-   */
-  public Integer getCheckinsCount() {
-    return checkinsCount;
-  }
-  
-  /**
-   * Returns users count
-   * 
-   * @return users count
-   */
-  public Integer getUsersCount() {
-    return usersCount;
-  }
-  
-  /**
-   * Returns tip count
-   * 
-   * @return tip count
-   */
-  public Integer getTipCount() {
-    return tipCount;
-  }
-  
-  private Integer checkinsCount;
-  private Integer usersCount;
-  private Integer tipCount;
+    /**
+     * Returns checkins count
+     *
+     * @return checkins count
+     */
+    public Integer getCheckinsCount() {
+        return checkinsCount;
+    }
 
-  @Override
-  public String toString() {
-    return "Stats{" +
-            "checkinsCount=" + checkinsCount +
-            ", usersCount=" + usersCount +
-            ", tipCount=" + tipCount +
-            '}';
-  }
+    /**
+     * Returns users count
+     *
+     * @return users count
+     */
+    public Integer getUsersCount() {
+        return usersCount;
+    }
+
+    /**
+     * Returns tip count
+     *
+     * @return tip count
+     */
+    public Integer getTipCount() {
+        return tipCount;
+    }
+
+    private Integer checkinsCount;
+    private Integer usersCount;
+    private Integer tipCount;
+
+    @Override
+    public String toString() {
+        return "Stats{"
+                + "checkinsCount=" + checkinsCount
+                + ", usersCount=" + usersCount
+                + ", tipCount=" + tipCount
+                + '}';
+    }
 }

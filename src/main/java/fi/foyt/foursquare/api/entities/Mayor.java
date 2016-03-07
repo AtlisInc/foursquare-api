@@ -8,33 +8,32 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.entities;
 
 /**
  * Class representing Mayor entity
- * 
+ *
  * @author Antti Leppä
  */
 public class Mayor extends Count {
 
-  private static final long serialVersionUID = -6838261267509832567L;
+    private static final long serialVersionUID = -6838261267509832567L;
 
-  /**
-   * Returns user
-   * 
-   * @return user
-   */
-  public CompactUser getUser() {
-    return user;
-  }
-  
-  private CompactUser user;
+    /**
+     * Returns user
+     *
+     * @return user
+     */
+    public CompactUser getUser() {
+        return user;
+    }
 
-  @Override
-  public String toString() {
-    return "Mayor{" +
-            "user=" + user +
-            '}';
-  }
+    private CompactUser user;
+
+    @Override
+    public String toString() {
+        return "Mayor{"
+                + "user=" + user
+                + '}';
+    }
 }

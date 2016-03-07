@@ -8,7 +8,6 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.entities.notifications;
 
 import fi.foyt.foursquare.api.FoursquareEntity;
@@ -16,32 +15,32 @@ import fi.foyt.foursquare.api.entities.CompleteTip;
 
 /**
  * Entity representing "Tip" notification
- * 
+ *
  * @author Antti Leppä
  *
  */
 public class TipNotification implements FoursquareEntity {
 
-  private static final long serialVersionUID = -4625637368235280260L;
+    private static final long serialVersionUID = -4625637368235280260L;
 
-  /**
-   * Returns name
-   * 
-   * @return name
-   */
-  public String getName() {
-    return name;
-  }
-  
-  /**
-   * Returns tip entity itself
-   * 
-   * @return tip entity itself
-   */
-  public CompleteTip getTip() {
-    return tip;
-  }
+    /**
+     * Returns name
+     *
+     * @return name
+     */
+    public String getName() {
+        return name;
+    }
 
-  private String name;
-  private CompleteTip tip;
+    /**
+     * Returns tip entity itself
+     *
+     * @return tip entity itself
+     */
+    public CompleteTip getTip() {
+        return tip;
+    }
+
+    private String name;
+    private CompleteTip tip;
 }

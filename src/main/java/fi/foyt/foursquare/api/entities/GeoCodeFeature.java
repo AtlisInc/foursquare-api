@@ -6,110 +6,108 @@ import fi.foyt.foursquare.api.FoursquareEntity;
 
 /**
  * features returned from a geocode response
- * 
+ *
  * @author rmangi
  *
  */
 public class GeoCodeFeature implements FoursquareEntity {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
 
-	/**
-	 * country code
-	 */
-	String cc;
-	
-	/**
-	 * The actual geometry
-	 */
-	GeoCodeGeometry geometry;
-	
-	/**
-	 * short name
-	 */
-	String name;
-	
-	/**
-	 * a longer name
-	 */
-	String displayName;
-	
-	/**
-	 * Beats the heck out of me...
-	 */
-	Integer woeType;
-	
-	/**
-	 * Attribution, seems to be a list of strings
-	 */
-	String[] attribution;
+    /**
+     * country code
+     */
+    String cc;
 
-	public GeoCodeFeature(String cc, GeoCodeGeometry geometry, String name,
-			String displayName, Integer woeType, String[] attribution) {
-		super();
-		this.cc = cc;
-		this.geometry = geometry;
-		this.name = name;
-		this.displayName = displayName;
-		this.woeType = woeType;
-		this.attribution = attribution;
-	}
+    /**
+     * The actual geometry
+     */
+    GeoCodeGeometry geometry;
 
-	public GeoCodeFeature() {
-		super();
-	}
+    /**
+     * short name
+     */
+    String name;
 
-	public String getCc() {
-		return cc;
-	}
+    /**
+     * a longer name
+     */
+    String displayName;
 
-	public void setCc(String cc) {
-		this.cc = cc;
-	}
+    /**
+     * Beats the heck out of me...
+     */
+    Integer woeType;
 
-	public GeoCodeGeometry getGeometry() {
-		return geometry;
-	}
+    /**
+     * Attribution, seems to be a list of strings
+     */
+    String[] attribution;
 
-	public void setGeometry(GeoCodeGeometry geometry) {
-		this.geometry = geometry;
-	}
+    public GeoCodeFeature(String cc, GeoCodeGeometry geometry, String name,
+            String displayName, Integer woeType, String[] attribution) {
+        super();
+        this.cc = cc;
+        this.geometry = geometry;
+        this.name = name;
+        this.displayName = displayName;
+        this.woeType = woeType;
+        this.attribution = attribution;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public GeoCodeFeature() {
+        super();
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getCc() {
+        return cc;
+    }
 
-	public String getDisplayName() {
-		return displayName;
-	}
+    public void setCc(String cc) {
+        this.cc = cc;
+    }
 
-	public void setDisplayName(String displayName) {
-		this.displayName = displayName;
-	}
+    public GeoCodeGeometry getGeometry() {
+        return geometry;
+    }
 
-	public Integer getWoeType() {
-		return woeType;
-	}
+    public void setGeometry(GeoCodeGeometry geometry) {
+        this.geometry = geometry;
+    }
 
-	public void setWoeType(Integer woeType) {
-		this.woeType = woeType;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public String[] getAttribution() {
-		return attribution;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setAttribution(String[] attribution) {
-		this.attribution = attribution;
-	}
-	
-	
-	
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public void setDisplayName(String displayName) {
+        this.displayName = displayName;
+    }
+
+    public Integer getWoeType() {
+        return woeType;
+    }
+
+    public void setWoeType(Integer woeType) {
+        this.woeType = woeType;
+    }
+
+    public String[] getAttribution() {
+        return attribution;
+    }
+
+    public void setAttribution(String[] attribution) {
+        this.attribution = attribution;
+    }
+
 }

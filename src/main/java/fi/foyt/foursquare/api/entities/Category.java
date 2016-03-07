@@ -10,7 +10,6 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.entities;
 
 import fi.foyt.foursquare.api.FoursquareEntity;
@@ -19,98 +18,98 @@ import java.util.Arrays;
 
 /**
  * Class representing Category entity
- * 
+ *
  * @author Antti Leppä / Blake Dy
  */
 public class Category implements FoursquareEntity {
-  
-  private static final long serialVersionUID = -4573082152802069375L;
-  
-  /**
-   * Returns category id
-   * 
-   * @return category id
-   */
-  public String getId() {
-    return id;
-  }
 
-  /**
-   * Returns category name
-   * 
-   * @return category name
-   */
-  public String getName() {
-    return name;
-  }
-  
-  /**
-   * Return plural name
-   * 
-   * @return plural name
-   */
-  public String getPluralName() {
-    return pluralName;
-  }
+    private static final long serialVersionUID = -4573082152802069375L;
 
-  /**
-   * Returns icon
-   * 
-   * @return icon
-   */
-  public String getIcon() {
-    return icon;
-  }
+    /**
+     * Returns category id
+     *
+     * @return category id
+     */
+    public String getId() {
+        return id;
+    }
 
-  /**
-   * Returns parents as array of Strings
-   * 
-   * @return parents as array of Strings
-   */
-  public String[] getParents() {
-    return parents;
-  }
+    /**
+     * Returns category name
+     *
+     * @return category name
+     */
+    public String getName() {
+        return name;
+    }
 
-  /**
-   * Returns if this is a primary category
-   * 
-   * @return is this a primary category
-   */
-  public Boolean getPrimary() {
-    return primary;
-  }
-  
-  /**
-   * Returns sub categories
-   * 
-   * @return sub categories
-   */
-  public Category[] getCategories() {
-    return categories;
-  }
+    /**
+     * Return plural name
+     *
+     * @return plural name
+     */
+    public String getPluralName() {
+        return pluralName;
+    }
 
-  private String id;
-  private String name;
-  private String pluralName;
-  private String icon;
-  private String[] parents;
-  private Boolean primary;
-  private Category[] categories;
-  
-  // TODO
-  private String shortName;
+    /**
+     * Returns icon
+     *
+     * @return icon
+     */
+    public String getIcon() {
+        return icon;
+    }
 
-  @Override
-  public String toString() {
-    return "Category{" +
-            "id='" + id + '\'' +
-            ", name='" + name + '\'' +
-            ", pluralName='" + pluralName + '\'' +
-            ", icon='" + icon + '\'' +
-            ", parents=" + Arrays.toString(parents) +
-            ", primary=" + primary +
-            ", categories=" + Arrays.toString(categories) +
-            ", shortName='" + shortName + '\'' +
-            '}';
-  }
+    /**
+     * Returns parents as array of Strings
+     *
+     * @return parents as array of Strings
+     */
+    public String[] getParents() {
+        return parents;
+    }
+
+    /**
+     * Returns if this is a primary category
+     *
+     * @return is this a primary category
+     */
+    public Boolean getPrimary() {
+        return primary;
+    }
+
+    /**
+     * Returns sub categories
+     *
+     * @return sub categories
+     */
+    public Category[] getCategories() {
+        return categories;
+    }
+
+    private String id;
+    private String name;
+    private String pluralName;
+    private String icon;
+    private String[] parents;
+    private Boolean primary;
+    private Category[] categories;
+
+    // TODO
+    private String shortName;
+
+    @Override
+    public String toString() {
+        return "Category{"
+                + "id='" + id + '\''
+                + ", name='" + name + '\''
+                + ", pluralName='" + pluralName + '\''
+                + ", icon='" + icon + '\''
+                + ", parents=" + Arrays.toString(parents)
+                + ", primary=" + primary
+                + ", categories=" + Arrays.toString(categories)
+                + ", shortName='" + shortName + '\''
+                + '}';
+    }
 }

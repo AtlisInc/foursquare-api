@@ -14,24 +14,24 @@ import java.util.Arrays;
 
 /**
  * Group of Specials
- * 
+ *
  * @author Antti Leppä
  */
 public class SpecialGroup extends Group<CompleteSpecial> {
 
-  private static final long serialVersionUID = 7724731185025537356L;
+    private static final long serialVersionUID = 7724731185025537356L;
 
-  @Override
-  public CompleteSpecial[] getItems() {
-    return items;
-  }
-  
-  private CompleteSpecial[] items;
+    @Override
+    public CompleteSpecial[] getItems() {
+        return items;
+    }
 
-  @Override
-  public String toString() {
-    return "SpecialGroup{" +
-            "items=" + Arrays.toString(items) +
-            '}';
-  }
+    private CompleteSpecial[] items;
+
+    @Override
+    public String toString() {
+        return "SpecialGroup{"
+                + "items=" + Arrays.toString(items)
+                + '}';
+    }
 }

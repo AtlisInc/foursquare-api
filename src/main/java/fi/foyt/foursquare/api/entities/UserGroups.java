@@ -16,32 +16,32 @@ import java.util.Arrays;
 
 /**
  * Group of UserGroups
- * 
+ *
  * @author Antti Leppä / Blake Dy
  */
 public class UserGroups extends Count {
 
-  private static final long serialVersionUID = -7444569523527922004L;
+    private static final long serialVersionUID = -7444569523527922004L;
 
-  /**
-   * Returns user groups
-   * 
-   * @return user groups
-   */
-  public UserGroup[] getGroups() {
-    return groups;
-  }
-  
-  private UserGroup[] groups;
-  
-  // TODO
-  private String summary;
+    /**
+     * Returns user groups
+     *
+     * @return user groups
+     */
+    public UserGroup[] getGroups() {
+        return groups;
+    }
 
-  @Override
-  public String toString() {
-    return "UserGroups{" +
-            "groups=" + Arrays.toString(groups) +
-            ", summary='" + summary + '\'' +
-            '}';
-  }
+    private UserGroup[] groups;
+
+    // TODO
+    private String summary;
+
+    @Override
+    public String toString() {
+        return "UserGroups{"
+                + "groups=" + Arrays.toString(groups)
+                + ", summary='" + summary + '\''
+                + '}';
+    }
 }

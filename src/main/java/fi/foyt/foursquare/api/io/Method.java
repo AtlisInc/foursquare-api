@@ -8,16 +8,15 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.io;
 
 /**
- * Enumeration representing HTTP Method 
- * 
+ * Enumeration representing HTTP Method
+ *
  * @author Antti Leppä
  *
  */
 public enum Method {
-  GET,
-  POST
+    GET,
+    POST
 }

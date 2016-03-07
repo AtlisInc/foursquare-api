@@ -8,7 +8,6 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.entities;
 
 import fi.foyt.foursquare.api.FoursquareEntity;
@@ -19,17 +18,17 @@ import fi.foyt.foursquare.api.FoursquareEntity;
  * @author Antti Leppä
  */
 public class Warning implements FoursquareEntity {
-  
-  private static final long serialVersionUID = 7167332454422034014L;
 
-  /**
-   * Returns warning text
-   * 
-   * @return warning text
-   */
-  public String getText() {
-    return text;
-  }
-  
-  private String text;
+    private static final long serialVersionUID = 7167332454422034014L;
+
+    /**
+     * Returns warning text
+     *
+     * @return warning text
+     */
+    public String getText() {
+        return text;
+    }
+
+    private String text;
 }

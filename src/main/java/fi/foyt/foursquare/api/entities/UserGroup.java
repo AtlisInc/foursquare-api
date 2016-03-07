@@ -8,31 +8,30 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.entities;
 
 import java.util.Arrays;
 
 /**
  * Group of Users
- * 
+ *
  * @author Antti Leppä
  */
 public class UserGroup extends Group<CompactUser> {
 
-  private static final long serialVersionUID = 3181702805520905399L;
-  
-  @Override
-  public CompactUser[] getItems() {
-    return items;
-  }
+    private static final long serialVersionUID = 3181702805520905399L;
 
-  private CompactUser[] items;
+    @Override
+    public CompactUser[] getItems() {
+        return items;
+    }
 
-  @Override
-  public String toString() {
-    return "UserGroup{" +
-            "items=" + Arrays.toString(items) +
-            '}';
-  }
+    private CompactUser[] items;
+
+    @Override
+    public String toString() {
+        return "UserGroup{"
+                + "items=" + Arrays.toString(items)
+                + '}';
+    }
 }

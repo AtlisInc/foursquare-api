@@ -4,37 +4,34 @@ import fi.foyt.foursquare.api.FoursquareEntity;
 
 /**
  * Just holds the geocode data
+ *
  * @author rmangi
  *
  */
 public class GeoCode implements FoursquareEntity {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 2673015081507846654L;
-	
-	GeoCodeFeature feature;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 2673015081507846654L;
 
-	public GeoCode() {
-		super();
-	}
-	
+    GeoCodeFeature feature;
 
-	public GeoCode(GeoCodeFeature feature) {
-		super();
-		this.feature = feature;
-	}
+    public GeoCode() {
+        super();
+    }
 
-	public GeoCodeFeature getFeature() {
-		return feature;
-	}
+    public GeoCode(GeoCodeFeature feature) {
+        super();
+        this.feature = feature;
+    }
 
-	public void setFeature(GeoCodeFeature feature) {
-		this.feature = feature;
-	}
+    public GeoCodeFeature getFeature() {
+        return feature;
+    }
 
-	
-	
-	
+    public void setFeature(GeoCodeFeature feature) {
+        this.feature = feature;
+    }
+
 }

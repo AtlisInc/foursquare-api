@@ -8,33 +8,32 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api;
 
 /**
  * FoursquareAPI exception
- * 
+ *
  * @author Antti Leppä
  */
 public class FoursquareApiException extends Exception {
 
-  private static final long serialVersionUID = -4581357612541474483L;
+    private static final long serialVersionUID = -4581357612541474483L;
 
-  /**
-   * Constructor
-   * 
-   * @param message message
-   */
-  public FoursquareApiException(String message) {
-    super(message);
-  }
-  
-  /**
-   * Constructor
-   * 
-   * @param t throwable
-   */
-  public FoursquareApiException(Throwable t) {
-    super(t);
-  }
+    /**
+     * Constructor
+     *
+     * @param message message
+     */
+    public FoursquareApiException(String message) {
+        super(message);
+    }
+
+    /**
+     * Constructor
+     *
+     * @param t throwable
+     */
+    public FoursquareApiException(Throwable t) {
+        super(t);
+    }
 }

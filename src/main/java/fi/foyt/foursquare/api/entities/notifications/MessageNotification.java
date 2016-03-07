@@ -8,28 +8,27 @@
  * Licensed under GNU Lesser General Public License Version 3 or later (the "LGPL")
  * http://www.gnu.org/licenses/lgpl.html
  */
-
 package fi.foyt.foursquare.api.entities.notifications;
 
 import fi.foyt.foursquare.api.FoursquareEntity;
 
 /**
  * Entity representing "Message" notification
- * 
+ *
  * @author Antti Leppä
  */
 public class MessageNotification implements FoursquareEntity {
 
-  private static final long serialVersionUID = 1341444447020549517L;
+    private static final long serialVersionUID = 1341444447020549517L;
 
-  /**
-   * Returns message
-   * 
-   * @return message
-   */
-  public String getMessage() {
-    return message;
-  }
+    /**
+     * Returns message
+     *
+     * @return message
+     */
+    public String getMessage() {
+        return message;
+    }
 
-  private String message;
+    private String message;
 }
