@@ -14,6 +14,7 @@
  */
 package fi.foyt.foursquare.api;
 
+import com.google.appengine.repackaged.com.google.gson.Gson;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -742,6 +743,8 @@ public class FoursquareApi {
         }
     }
 
+    Gson gson = new Gson();
+    
     /**
      * Returns photos for a venue.
      *
@@ -763,6 +766,7 @@ public class FoursquareApi {
             PhotoGroup result = null;
 
             if (response.getMeta().getCode() == 200) {
+//                result = gson.fromJson(response.getResponse().getJSONObject("photos").toString(), PhotoGroup.class);
                 result = (PhotoGroup) JSONFieldParser.parseEntity(PhotoGroup.class, response.getResponse().getJSONObject("photos"), this.skipNonExistingFields);
             }
 

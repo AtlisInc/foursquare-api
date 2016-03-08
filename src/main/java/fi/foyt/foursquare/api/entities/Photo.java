@@ -107,6 +107,53 @@ public class Photo implements FoursquareEntity {
         return checkin;
     }
 
+    /**
+     * Returns the picture height
+     *
+     * @return the picture height
+     */
+    public Integer getHeight() {
+        return height;
+    }
+
+    /**
+     * Returns the picture width
+     *
+     * @return the picture width
+     */
+    public Integer getWidth() {
+        return width;
+    }
+
+    /**
+     * Returns the visibility level of the photo (public, friends, private)
+     *
+     * @return the visibility level of the photo (public, friends, private)
+     */
+    public String getVisibility() {
+        return visibility;
+    }
+
+    /**
+     * Returns The prefix of the url of the image, the final url should include
+     * size element e.g. prefix/width200/suffix
+     *
+     * @return The prefix of the url of the image, the final url should include
+     * size element e.g. prefix/width200/suffix
+     */
+    public String getPrefix() {
+        return prefix;
+    }
+
+    /**
+     * Returns The suffix of the url of the image
+     *
+     * @return The suffix of the url of the image
+     */
+    public String getSuffix() {
+        return suffix;
+    }
+
     private String id;
     private Long createdAt;
     private String url;
